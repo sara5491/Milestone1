@@ -28,30 +28,51 @@
                    <form method="POST" action="https://formdump.codeinstitute.net/">
                          <h2>Contact Us</h2>
                          <div>
-                         <label for="fname">First Name*</label>
+                         <label for="fname">First Name*:</label>
                          <input type="text" id="fname" name="first_name" placeholder="First Name" required/>
                         </div>
                         <div>
-                         <label for="lname">Last Name*</label>
+                         <label for="lname">Last Name*:</label>
                          <input type="text" id="lname" name="last_name" placeholder="Last Name" required/>
                         </div> 
-                        <label for="email">Email Address*</label>
+                        <label for="email">Email Address*:</label>
                          <input id="email" type="email" name="email_address" placeholder="Email Address" required/>
-                         <p>Is your enquiry regarding an existing booking?*</p>
+                         <p>Is your enquiry regarding an existing booking?*:</p>
                          <label for="yes">Yes</label>
                          <input id="yes" type="radio" name="existing_booking" value="yes" required/>
                          <label for="no">No</label>
-                         <input id="no" type="radio" name="existing_booking" value="no"/>
-                         <div>
-                         <input id="subscription" type="checkbox" name="subscription">
-                         <label for="subscription">Tick this box to subscribe to our newsletter</label>
+                        <input id="no" type="radio" name="existing_booking" value="no"/>
                         </div>
                         <div>
-                         <input type="submit" value="Submit"/>
+                        <label for="bookingref">Booking reference:</label>
+                        <input type="text" id="bookingref" name="booking_ref" placeholder="if applicable"/> 
                         </div>
-                   </form>
-            </section> 
-    </section>
+                        <div>
+                            <label for="enquirytype">Enquiry type*:</label>
+                            <select name="enquirytype" id="enquirytype" required>
+                              <option value>Select...</option>
+                              <option value="Existing booking">Existing booking</option>
+                              <option value="Tour information">Tour information</option>
+                              <option value="General enquiry">General enquiry</option>
+                              <option value="Other">Other</option>
+                            </select>
+                          </div>
+                
+                
+                <div>
+                <textarea rows="6" cols="50" name="enquiry" required>
+                </textarea>
+                </div>
+                <div>
+                    <input id="subscription" type="checkbox" name="subscription">
+                    <label for="subscription">Tick this box to subscribe to our newsletter.</label>
+                   </div>
+                <div>
+                <input type="submit">
+                <small id="emailHelp" class="form-text text-muted">We'll be in touch with you within 1 business day.</small>
+                </div>
+                </form>
+                   </section> 
     <footer>
 
     </footer>
