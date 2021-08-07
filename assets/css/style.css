@@ -18,3 +18,8 @@ h2 {
     letter-spacing: 5px;
     color: #444444;
 }
+
+#logo{
+    float: left;
+    font-size: 300%;
+}
