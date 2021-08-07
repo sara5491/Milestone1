@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
 
-body {
-    font-family: Lato;
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
 }
 
-header {
-    margin: 0;
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #777777;
+}
+
+h2 {
+    font-family: 'Work Sans';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #444444;
 }
