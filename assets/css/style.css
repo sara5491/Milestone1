@@ -27,7 +27,7 @@ nav ul {
     float: right;
 }
 
-#logo, #menu {
+#logo, #menu{
     line-height: 75px;
 }
 
@@ -49,6 +49,32 @@ nav ul {
     border-bottom: 2px solid #777777;
 }
 
+#hero-image{
+    height: 200px;
+    width: 100%;
+    background: no-repeat center center;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer{
+    height:600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
 /* Contact form */
 
 .form-section {
@@ -66,4 +92,21 @@ nav ul {
     left: 20%;
     padding: 20px;
 }
+
+
+
+.social-media {
+    text-align: center
+}
+
+.social-media li{
+    display: inline;
+}
+
+.social-media i{
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
+}
+
 
