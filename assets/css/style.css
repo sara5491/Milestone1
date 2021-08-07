@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
 
-
-*{
-    margin:0;
-    padding:0;
-    border:0;
-}
-
 body {
     font-family: 'Work Sans', sans-serif;
     color: #777777;
@@ -23,3 +16,54 @@ h2 {
     float: left;
     font-size: 300%;
 }
+
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+nav ul {
+    float: right;
+}
+
+#logo, #menu {
+    line-height: 75px;
+}
+
+#menu li {
+    display: inline;
+    margin: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid #777777;
+}
+
+.active {
+    border-bottom: 2px solid #777777;
+}
+
+/* Contact form */
+
+.form-section {
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.contact-form {
+    margin-top: 150px;
+    color: #fff;
+    background-color: rgba(50, 50, 50, 0.3);
+    max-width: 800px;
+    position: absolute;
+    left: 20%;
+    padding: 20px;
+}
+
